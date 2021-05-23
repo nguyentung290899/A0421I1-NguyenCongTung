@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="nobita" src="images/nobita.jpg" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+//relative
+<script>
+    window.addEventListener("keydown", moveNobita)
+    function moveNobita(evt) {
+        alert("1")
+        let nobita = document.getElementById("nobita");
+        switch (evt.keyCode) {
+            case 37: {
+                nobita.style.left = parseInt(nobita.style.left) - 5 + 'px';
+                break;
+            }
+            case 38: {
+                nobita.style.top = parseInt(nobita.style.top) - 5 + 'px';
+                break;
+            }
+            case 39: {
+                nobita.style.left = parseInt(nobita.style.left) + 5 + 'px';
+                break;
+            }
+            case 40: {
+                nobita.style.top = parseInt(nobita.style.top) + 5 + 'px';
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
