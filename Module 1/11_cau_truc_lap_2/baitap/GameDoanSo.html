@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="startgame()" > start </button>
+<script>
+    function startgame() {
+        let electSpace1 = parseInt(prompt("bạn muốn bắt đầu đoán trong khoảng từ :"));
+        let electSpace2 = parseInt(prompt("đến :"));
+        var electSpace3 = parseInt(prompt("nhập giá trị bạn muốn đoán :"));
+        let random = Math.floor(Math.random() * (electSpace2 - electSpace1) + electSpace1);
+        let j = 1;
+        let i = 0;
+        while (i<1) {
+            if (random === electSpace3){
+                alert("Bạn đã đoán đúng");
+                i++;
+            } else {
+                electSpace3 = parseInt(prompt("nhập lại giá trị bạn muốn đoán :"));
+                j++;
+            }if (j === 3 ) {
+                alert("bạn đã thua");
+                i++;
+            }
+        }
+    }
+</script>
+</body>
+</html>
