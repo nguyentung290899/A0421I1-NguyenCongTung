@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1> Type anthing slowly</h1>
+    <textarea id="text" style=" width: 400px; height: 250px" onkeyup="fake()" ></textarea>
+</center>
+<script>
+    let str = "";
+    let array = ["","x","i","n"," ","c","h","à","o"," ","b","ạ","n"," ","đ","ã"," ","đ","ế","n"," ","v","ớ","i"," ","c","o","d","e"," ","g","y","m","!","!"];
+    function fake() {
+        let text = document.getElementById("text").value;
+        for (let i = 0; i <= text.length; i++) {
+            str = str + array[i];
+            if (i === 34) {
+                document.getElementById("text").value = "";
+                str = "";
+            }
+        }
+        document.getElementById("text").value = str;
+        str = "";
+        setTimeout("fake()", 1);
+    }
+</script>
+</body>
+</html>
