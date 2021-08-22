@@ -13,4 +13,4 @@ public class FanMain {
         System.out.println(fan2.toString());
     }
 }
-© 2021 GitHub, Inc.
+
