@@ -1,14 +1,13 @@
 package bai_12_java_collection_frameword.thuc_hanh.phan_biet_hash_map_va_hash_set;
 
-public class Stundent {
+public class Student {
     private String name;
     private int age;
     private String address;
 
-    public Student() {
+    public Stundent() {
     }
-
-    public Student(String name, int age, String address) {
+    public Stundent(String name, int age, String address) {
         super();
         this.name = name;
         this.age = age;
